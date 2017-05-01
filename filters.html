@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full Slider - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/tz.css" rel="stylesheet">
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="myPage">
+
+<div class="container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Назва компанії</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Блок Фірм</a>
+                    </li>
+                    <li>
+                        <a href="#">Послуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Рекомендації</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="filters.html">Пошук товару за фільтрами</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Filters Section -->
+    <div class="filtr-big">    
+        <form action="javascript:void(0)" method="post">
+            
+            <!-- filters -->
+            <div class="overhidden filtr" style="padding-top : 10px;">
+                     
+                <div class="filtr_pravy">
+                    <div class="fleft filtr_double_box_wrap">
+                        <div class="filtr_double_box">
+                            <div class="title">Search text</div>
+                            <div>
+                                <div class="main-text">
+                                    <input type="text" class="input-filtr" value="" name="fulltext">
+                                </div>
+                            </div>
+                            <div class="middle-space"></div>                   
+                            
+                            <div>                       
+                                <script type="text/javascript">
+                                    $(document).ready(function()
+                                    {
+                                        $("#multiselect-typ").multiselect(
+                                        {
+                                            selectedList: 1,
+                                            header: false,
+                                            noneSelectedText: 'All',
+                                            selectedText: '# / #',
+                                            minWidth : 250,
+                                            height : 180
+                                        });
+                                    });
+                                </script>     
+                                <div class="title">Type of forklift</div>
+                                <div class="main-select">
+                                    <select name="nosnost-od" class="select">   
+                                        <option value="0">All</option>
+                                        <option value="500">500 kg</option>
+                                        <option value="800">800 kg</option>
+                                        <option value="1000">1000 kg</option>                      
+                                    </select>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="fleft filtr_double_box_wrap">        
+                        <div class="filtr_double_box">
+                            <div class="title">
+                                Capacity from
+                            </div>
+                            <div class="main-select">
+                                <select name="nosnost-od" class="select">   
+                                    <option value="0">All</option>
+                                    <option value="500">500 kg</option>
+                                    <option value="800">800 kg</option>
+                                    <option value="1000">1000 kg</option>                      
+                                </select>
+                            </div>
+                            <div class="middle-space">
+
+                            </div>                   
+                            <div class="title">
+                                Capacity up to
+                            </div>
+                            <div class="main-select">
+                                <select name="nosnost-do" class="select">   
+                                    <option value="0">All</option>
+                                    <option value="500">500 kg</option>
+                                    <option value="800">800 kg</option>
+                                </select>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="fleft filtr_double_box_wrap">             
+                        <div class="filtr_double_box">
+                            <div class="title">
+                                Lift from
+                            </div>
+                            <div class="main-select">
+                                <select name="zdvih-od" class="select">       
+                                    <option value="0">All</option>
+                                    <option value="2000">2000 mm</option>
+                                    <option value="2100">2100 mm</option>
+                                    <option value="2200">2200 mm</option>
+                                </select>
+                            </div>  
+                            <div class="middle-space">
+
+                            </div>  
+
+                            <div class="title">
+                                Mast
+                            </div>
+                            <div class="main-select">
+                                <select name="zvedaci-zarizeni" class="select">
+                                    <option value="0">All</option>
+                                    <option value="1">With free lift</option>
+                                    <option value="2">Without free lift</option>
+                                    <option value="3">TRIPLEX</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="filtr_levy">       
+                    <div class="fleft filtr_double_box_wrap">    
+                        <div class="filtr_double_box">
+                            <div class="title">
+                                Overall height up to
+                            </div>
+                            <div class="main-select">
+                                <select name="stavebni-vyska-do" class="select">      
+                                    <option value="0">All</option>
+                                    <option value="1800">1800 mm</option>
+                                    <option value="1900">1900 mm</option>
+                                    <option value="2000">2000 mm</option>
+                                </select>
+                            </div>
+                            <div class="middle-space">
+
+                            </div>   
+
+                            <script type="text/javascript">
+                                $(document).ready(function()
+                                {
+                                    $("#multiselect-vyrobce").multiselect(
+                                    {
+                                        selectedList: 1,
+                                        header: false,
+                                        noneSelectedText: 'All',
+                                        selectedText: '# / #',
+                                        minWidth : 250,
+                                        height : 180
+                                    });
+                                });
+                            </script>     
+                            <div class="title">
+                                Brand
+                            </div>
+                            <div class="main-multiselect">
+                                <select name="stavebni-vyska-do" class="select">      
+                                    <option value="0">All</option>
+                                    <option value="1800">1800 mm</option>
+                                    <option value="1900">1900 mm</option>
+                                    <option value="2000">2000 mm</option>
+                                </select>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="fleft filtr_double_box_wrap">     
+                        <div class="filtr_double_box">
+                            <div class="title">
+                                Price up to
+                            </div>
+                            <div class="main-select">
+                                <select name="cena-do" class="select">
+                                    <option value="0">All</option>
+                                    <option value="300">300&nbsp;€</option>
+                                    <option value="800">800&nbsp;€</option>
+                                    <option value="1300">1 300&nbsp;€</option>
+                                    <option value="1800">1 800&nbsp;€</option>
+                                </select>
+                            </div> 
+                            <div class="middle-space">
+
+                            </div>  
+
+                            <script type="text/javascript">
+                            $(document).ready(function()
+                            {
+                                $("#multiselect-pohon").multiselect(
+                                {
+                                    selectedList: 1,
+                                    header: false,
+                                    noneSelectedText: 'All',
+                                    selectedText: '# / #',
+                                    minWidth : 250,
+                                    height : 140
+                                });
+                            });
+                            </script> 
+                            <div class="title">
+                                Power unit
+                            </div>
+                            <div class="main-multiselect">
+                                <select name="stavebni-vyska-do" class="select">      
+                                    <option value="0">All</option>
+                                    <option value="1800">1800 mm</option>
+                                    <option value="1900">1900 mm</option>
+                                    <option value="2000">2000 mm</option>
+                                </select>
+                            </div>       
+                        </div>
+                    </div>
+
+                    <div class="fleft filtr_double_box_wrap">         
+                        <div class="filtr_double_box">
+                            <div class="title">
+                                Motohours up to
+                            </div>
+                            <div class="main-select">
+                                <select name="motohodiny" class="select">
+                                    <option value="0">All</option>
+                                    <option value="1000">1000</option>
+                                    <option value="2000">2000</option>
+                                </select>
+                            </div>
+                            <div class="middle-space">
+
+                            </div>  
+
+                            <div class="title">
+                                Production year from
+                            </div>
+                            <div class="main-select">
+                                <select name="rok-vyroby-od" class="select">   
+                                    <option value="0">All</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                </select>
+                            </div>
+
+                        </div>                         
+                    </div> 
+                </div>
+                
+                <script type="text/javascript">           
+                    $(document).ready(function()
+                    {
+                        // Kliknuti na checkbox
+                        $('.checkbox').click(function()
+                        {
+                            if(!$(this).hasClass("checkbox-set"))
+                            {
+                                $(this).addClass('checkbox-set');                    
+                            }
+                            else
+                            {
+                                $(this).removeClass('checkbox-set');    
+                            }
+                        });
+                    })           
+                </script>
+            </div>
+                                
+            <!-- semi-cabin, cabin, 4 sections -->
+            <div class="overhidden" style="margin-top : 10px">        
+                <div>
+                    <!-- polokabina -->
+                    <div class="fleft" style="margin-left : 10px;">
+                        <input type="checkbox" name="polokabina" id="polokabina" class="checkbox"> 
+                        <label class="checkbox-label" for="polokabina">Semi-cabin</label>
+                    </div>
+                    
+                    <!-- kabina -->
+                    <div class="fleft" style="margin-left : 15px;">
+                        <input type="checkbox" name="kabina" id="kabina" class="checkbox"> 
+                        <label class="checkbox-label" for="kabina">Cabin</label>
+                    </div>
+                    
+                    <!-- 4 sekce -->
+                    <div class="fleft" style="margin-left : 15px">
+                        <input type="checkbox" name="4-sekce" id="4-sekce" class="checkbox"> 
+                        <label class="checkbox-label" for="4-sekce">4-sections</label>
+                    </div>
+                </div>   
+            </div>                          
+              
+            <!-- Forklift of the week, Special offer, Freshly purchased, Like new -->
+            <div style="overflow: hidden; margin-top : 10px;">          
+                
+                <!-- filter right -->
+                <div class="filtr_pravy">
+                
+                     
+                        <div class="preddefinovany_filtr_hlavni_wrap">
+                            <a href="http://www.vzvgroup.com/en/forklifts-in-stock/jungheinrich-efg-425-16513">
+                                <div class="fleft preddefinovany_filtr_hlavni">
+                                    Forklift of the week
+                                    <input id="f1" type="checkbox" name="vozik_tydne" class="checkbox">
+                                </div>
+                            </a>
+                        </div>  
+                                
+                    <div class="preddefinovany_filtr_hlavni_wrap">
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock?akcni_nabidka=1">
+                            <div class="fleft preddefinovany_filtr_hlavni ">
+                                Special offer
+                                <input id="f2" type="checkbox" name="akcni_nabidka" class="checkbox">
+                            </div>
+                        </a>
+                    </div>  
+                
+                </div>
+                
+                <!-- filter left -->
+                <div class="filtr_levy">
+                
+                    <div class="preddefinovany_filtr_hlavni_wrap">
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock?nove_dovezeno=1">
+                            <div class="fleft preddefinovany_filtr_hlavni ">
+                                <strong>Freshly purchased</strong>
+                                <input id="f3" type="checkbox" name="nove_dovezeno" value="1" class="checkbox">
+                            </div>
+                        </a>
+                    </div>  
+                
+                    <div class="preddefinovany_filtr_hlavni_wrap">
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock?zanovni=1">
+                            <div class="fleft preddefinovany_filtr_hlavni ">
+                                Like new
+                                <input id="f4" type="checkbox" name="zanovni" value="1" class="checkbox">
+                            </div>
+                        </a>
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+            <!-- empty section -->
+            <div style="overflow: hidden; margin-top : 15px;"></div>
+            
+            <!-- Row items, Tiled layout listing, SEARCH -->
+            <div style="margin-top: 10px; margin-left : 1%; margin-right : 1%;" class="overhidden">
+                <div class="fleft" style="font-size : 12px;">
+                    <div class="fleft">
+                        <a href="javascript:void(0)" id="radky" class="active" style="display: table;">
+                            <img src="http://www.vzvgroup.com/templates/img/radek_button_gray.png" alt="radky" style="width: 23px;">
+                            <span style="display : table-cell; vertical-align: middle; padding-left : 3px;">Row items</span>
+                        </a>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="fleft" style="margin-left : 10px;"> 
+                        <a href="javascript:void(0)" id="dlazdice" style="display: table; float : left;">
+                            <img src="http://www.vzvgroup.com/templates/img/dlazdice_button_red.png" alt="dlazdice" style="width: 23px;">
+                            <span style="display : table-cell; vertical-align: middle; padding-left : 3px;">Tiled layout listing</span>
+                        </a>
+                    </div>       
+                </div>
+                     
+                <div class="fright">
+
+                    <div class="fright">
+                        <input type="hidden" name="hledat" value="SEARCH">
+                        <button class="button-big" style="width : 155px;">
+                            <span class="icoButton icoSearch">SEARCH</span>
+                        </button>
+                    </div> 
+                               
+                </div>                   
+            </div>
+        </form>    
+    </div>
+
+    <!-- Description Card's Section -->
+    <div class="polozky-wrap">  
+            
+        <h1>Forklifts in stock</h1>
+
+    <!-- nápověda pro parkoviště -->
+    
+    <div id="polozky" style="margin: 20px 0 50px 0; min-height:600px;" class=""><div class="polozky dlazdice">
+        
+        <!-- Description Card 1 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 2 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 3 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 4 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 5 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 6 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+        <!-- Description Card 7 -->
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+        
+    <!-- Description Card 8 -->    
+        <div class="polozka" id="polozkaScroll_17315">         
+
+                    <div style="overflow: hidden">
+                        <div style="float : left;">
+                            <div class="nadpis"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">17315 <span class="black">LINDE H 16 T</span></a></div>
+                        </div>
+                        <div style="float : right; width : 30%; position: relative;">
+                            <div>                        
+                                <!--<img src="templates/img/eshop/akce_dlazdice.png" />-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popisky">     
+                        <table width="100%">
+                            <tbody><tr>
+                                <td colspan="3" class="tdPohon">
+                                    <div class="nazev"><div>Power unit</div></div>
+                                    <div class="hodnota"><div><strong> LPG</strong></div></div>
+                                    <div class="jednotky"><div></div></div>                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Capacity</td>
+                                <td class="hodnota"><strong>1 600</strong></td>
+                                <td class="jednotky">kg</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Lift TRIPLEX</td>
+                                <td class="hodnota"><strong>4 625</strong></td>
+                                <td class="jednotky">mm</td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">Production year</td>
+                                <td class="hodnota"><strong>2007</strong></td>
+                                <td class="jednotky"></td>
+                            </tr>
+                            <tr>
+                                <td class="nazev">HRS</td>
+                                <td class="hodnota"><strong>8 919</strong></td>
+                                <td class="jednotky">HRS</td>
+                            </tr>
+
+                            <tr>
+                                <!-- panel akcí -->
+                                <td align="left" colspan="">
+                                    <div class="wrapPanelAkci">
+                                        <div class="boxPanelAkci tal">
+
+                                            <!-- parkoviste -->
+                                            
+                                            <!-- porovnávač -->
+                                            <a id="compare-23738" onclick="Porovnavac(23738)" class="butAddPorovnaniVoziku porovnavac-tooltip icoPorovnat " href="javascript:void(0);" title="Insert forklift to comparator" title-enable="Insert forklift to comparator" title-disable="Remove forklift from compare"></a>
+
+                                            <!-- chuf link -->
+                                            <a href="http://www.chuf.com/en/forklifts-in-stock/linde-h-16-t-17315" class="butForkliftOnChuf chuf-tooltip icoChuf" target="_blank" title="Show the forklift in (as is) condition for the best price"></a>              
+                                            
+                                        </div>    
+                                    </div>                             
+                                </td>
+
+                                <!-- více -->
+                                <td align="right" colspan="2"><a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315">More &gt;</a></td>
+                            </tr>
+
+                        </tbody></table>
+                    </div>
+
+
+                    <div class="foto">
+
+                        <a href="http://www.vzvgroup.com/en/forklifts-in-stock/linde-h-16-t-17315" title="LINDE H 16 T - LPG, 2007, SS, free lift, TRIPLEX" style="position:relative; display:block">
+                            <img src="http://www.vzvgroup.com/foto/17315/17315-01.jpg" alt="foto" width="100%" class="img">
+                        </a>
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <div class="cena" style="overflow: hidden;">
+
+                            <div class="overhidden">
+                                <div>      
+                                    <strong class="login">Price after log in</strong>
+                                </div>                                    
+                        <!--
+                            <div style="float : left; text-align: left; width : 64%">
+                                <strong style="font-size : 14px;">Price after log in</strong>
+                            </div>                                    
+                        -->                        
+                        </div>
+                            <input type="submit" value="Inquire forklift" class="poptat poptavkovy_form_ajax" jazyk="en" vozik-id="17315">
+                        </div>
+                    </div>
+        </div>
+                
+
+<br clear="all">   
+
+<script type="text/javascript">
+    $('.login').click(function()
+    {
+        $(".fancybox").fancybox
+        ({
+            scrolling: 'yes',
+            href : 'index.php?ajax=true&autentizace=login&lang=en',
+            type : 'ajax',
+            index: 1
+        });
+
+        $('.fancybox').trigger('click');
+    });            
+</script>
+
+<script src="http://81.2.216.182/share/templates/js/functions.js" type="text/javascript"></script></div>
+    <p align="right" style="font-size:10px">Price does not include VAT</p>
+</div>
+
+</div>
+
+</body>
+
+</html>

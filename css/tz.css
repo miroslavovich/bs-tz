@@ -3,6 +3,9 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+* {
+    box-sizing: border-box;
+}
 
 html,
 body {
@@ -33,4 +36,149 @@ body {
 
 footer {
     margin: 50px 0;
+}
+
+/* === Page Filters === */
+
+div {
+    display: block;
+}
+.filtr-big {
+    width: 100%;
+    overflow: hidden;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.overhidden {
+    overflow: hidden;
+}
+.filtr-big .filtr_double_box_wrap {
+    width: 14.666666%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+}
+.left, .fleft {
+    float: left;
+}
+.filtr-big .filtr_double_box {
+    width: 100%;
+}
+.filtr-big .title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #535353;
+}
+.filtr-big .middle-space {
+    height: 10px;
+    width: 130px;
+}
+script {
+    display: none;
+}
+.main-multiselect {
+    width: 100%;
+    max-width: 100%;
+}
+.filtr-big .preddefinovany_filtr_hlavni_wrap {
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+}
+.left, .fleft {
+    float: left;
+}
+.right, .fright {
+    float: right;
+}
+.checkbox-label {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    padding-left: 25px;
+    text-shadow: 0 0 1px rgba(150, 150, 150, 0.3);
+    vertical-align: middle;
+    font-size: 12px;
+    -moz-user-select: none;
+    background-image: url(../img/input/check-boxes.png);
+    color: #535353;
+}
+.polozky-wrap {
+    overflow: hidden;
+}
+.dlazdice .polozka {
+    float: left;
+    width: 25%;
+    background-image: url(../img/bg_dlazdice.gif);
+    background-repeat: repeat-x;
+    /* margin-right: 20px; */
+    padding: 0.95%;
+    margin-bottom: 25px;
+    height: 450px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.dlazdice .polozka .popisky table {
+    color: #464646;
+    font-size: 13px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.tdPohon {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+}
+.dlazdice .polozka .nazev {
+    text-align: left;
+    max-width: 65%;
+    width: 65%;
+}
+.tdPohon .nazev {
+    width: 40% !important;
+    max-width: 40% !important;
+}
+.tdPohon div {
+    float: left;
+    overflow: hidden;
+}
+.tdPohon .nazev div {
+    padding: 0 0 0 1px;
+}
+.tdPohon div {
+    float: left;
+    overflow: hidden;
+}
+.dlazdice .polozka .hodnota {
+    text-align: right;
+    max-width: 20%;
+    width: 20%;
+}
+.tdPohon .hodnota {
+    width: 45% !important;
+    max-width: 45% !important;
+}
+.dlazdice .polozka .foto {
+    text-align: center;
+    margin-top: 1%;
+}
+.dlazdice .img {
+    border-top: 2px solid #ff5400;
 }
